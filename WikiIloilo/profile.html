@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile - WikiIloilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadProfile()">
+
+    <header>
+        <h2><a href="index.html">WikiIloilo</a></h2>
+        <nav id="nav"></nav>
+    </header>
+
+    <div class="page">
+
+        <!-- Account settings -->
+        <div class="box form-box">
+            <h2>MY PROFILE &amp; ACCOUNT SETTINGS</h2>
+
+            <label>Username:</label>
+            <input type="text" id="profUsername">
+
+            <label>Email:</label>
+            <input type="text" id="profEmail">
+
+            <label>New Password (leave empty to keep the old one):</label>
+            <input type="password" id="profPassword">
+
+            <button onclick="updateProfile()">Update Profile</button>
+            <button class="danger" onclick="deleteAccount()">Delete My Account</button>
+            <p class="message" id="profileMessage"></p>
+        </div>
+
+        <!-- Visited places -->
+        <div class="box">
+            <h2 id="visitedTitle">PLACES I HAVE VISITED IN ILOILO</h2>
+            <div id="visitedList"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>WikiIloilo © 2026 | Cultural Heritage &amp; Places Encyclopedia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

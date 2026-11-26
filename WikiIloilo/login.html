@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - WikiIloilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="showNav()">
+
+    <header>
+        <h2><a href="index.html">WikiIloilo</a></h2>
+        <nav id="nav"></nav>
+    </header>
+
+    <div class="page two-columns">
+
+        <!-- Login -->
+        <div class="box form-box">
+            <h2>USER LOGIN</h2>
+
+            <label>Username:</label>
+            <input type="text" id="loginUsername">
+
+            <label>Password:</label>
+            <input type="password" id="loginPassword">
+
+            <button onclick="login()">Login</button>
+            <p class="message" id="loginMessage"></p>
+        </div>
+
+        <!-- Register -->
+        <div class="box form-box">
+            <h2>CREATE ACCOUNT</h2>
+
+            <label>Username:</label>
+            <input type="text" id="regUsername">
+
+            <label>Email:</label>
+            <input type="text" id="regEmail">
+
+            <label>Password:</label>
+            <input type="password" id="regPassword">
+
+            <button onclick="register()">Register</button>
+            <p class="message" id="registerMessage"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>WikiIloilo © 2026 | Cultural Heritage &amp; Places Encyclopedia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

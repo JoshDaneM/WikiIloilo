@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WikiIloilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadHome()">
+
+    <!-- Navigation Bar (filled in by script.js) -->
+    <header>
+        <h2><a href="index.html">WikiIloilo</a></h2>
+        <nav id="nav"></nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <h2>DISCOVER THE HERITAGE &amp; PLACES OF ILOILO CITY</h2>
+
+        <input type="text" id="searchInput" oninput="searchPlaces()"
+        placeholder="Search landmarks (e.g., Molo Church)...">
+
+        <button onclick="searchPlaces()">Search</button>
+
+        <!-- Category Filters -->
+        <div class="filters">
+            <button onclick="filterPlaces('All')">All</button>
+            <button onclick="filterPlaces('Church')">Churches</button>
+            <button onclick="filterPlaces('Plaza')">Plazas</button>
+            <button onclick="filterPlaces('Park')">Parks</button>
+            <button onclick="filterPlaces('Landmark')">Landmarks</button>
+        </div>
+
+    </section>
+
+    <!-- Place cards (filled in by script.js) -->
+    <section class="places" id="places"></section>
+
+    <!-- Footer -->
+    <footer>
+        <p>WikiIloilo © 2026 | Cultural Heritage &amp; Places Encyclopedia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

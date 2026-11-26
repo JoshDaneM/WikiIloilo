@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard - WikiIloilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadAdmin()">
+
+    <header>
+        <h2><a href="index.html">WikiIloilo</a></h2>
+        <nav id="nav"></nav>
+    </header>
+
+    <div class="page" id="adminPage">
+
+        <!-- 1. Add / Edit a place -->
+        <div class="box form-box">
+            <h2 id="formTitle">1. Add a New Official Place</h2>
+
+            <label>Place Name:</label>
+            <input type="text" id="placeName">
+
+            <label>Category:</label>
+            <select id="placeCategory">
+                <option>Church</option>
+                <option>Plaza</option>
+                <option>Park</option>
+                <option>Landmark</option>
+            </select>
+
+            <label>District / Location:</label>
+            <input type="text" id="placeLocation">
+
+            <label>Image (web link, or a file name like molo.jpg):</label>
+            <input type="text" id="placeImage">
+
+            <label>Historical &amp; Visitor Info:</label>
+            <textarea id="placeInfo" rows="5"></textarea>
+
+            <button id="saveButton" onclick="savePlace()">+ Publish Place</button>
+            <button onclick="clearForm()">Clear</button>
+        </div>
+
+        <!-- 2. All places -->
+        <div class="box">
+            <h2>2. Published Iloilo Places</h2>
+            <div id="adminPlaces"></div>
+        </div>
+
+        <!-- 3. All comments -->
+        <div class="box" id="comments">
+            <h2>3. Manage Comments</h2>
+            <div id="adminComments"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>WikiIloilo © 2026 | Cultural Heritage &amp; Places Encyclopedia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
